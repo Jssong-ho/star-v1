@@ -1,0 +1,270 @@
+* {
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background: white;
+  flex-direction: row;
+}
+
+/* 왼쪽리스트 */
+.logo {
+  display: flex;
+  height: 50px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#main_list {
+  width: 150px;
+}
+
+#home img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+#home {
+  display: flex;
+  align-items: center;
+  width: 100px;
+  margin: 0 0 20px 0;
+}
+#home a {
+  font-size: 20px;
+  color: blue;
+}
+
+#icon_right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  margin: 0 0 20px 0;
+}
+#icon_my div {
+  display: flex;
+  align-items: center;
+}
+#icon_my p {
+  color: #000000;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#icon_my a {
+  color: blue;
+  align-items: center;
+  justify-content: right;
+}
+#icon_list {
+  width: 300px;
+  margin: 3rem;
+  display: flex;
+
+  flex-direction: column;
+  right: 10px;
+  top: 20px;
+}
+
+#icon_list a p {
+  font-size: 30px;
+}
+#icon_list img {
+  height: 50px;
+  width: 50px;
+}
+
+/* 오른쪽 리스트 */
+.right_box {
+  margin: 40px;
+}
+
+.rigth_ico {
+  width: 50px;
+  border-radius: 100%;
+  border: 1px solid white;
+}
+.middle_ico {
+  width: 50px;
+  border: 1px solid white;
+  display: flex;
+  margin: 0 auto;
+}
+
+.right_myProfile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 320px;
+  margin: 20px 0;
+}
+
+.right_myProfile div {
+  display: flex;
+  align-items: center;
+}
+
+.right_myProfile p {
+  color: #262626;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.btn_blue {
+  background-color: transparent;
+  border: none;
+  color: rgb(0, 149, 246);
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.right_recommend {
+  width: 320px;
+  margin: 0 0 30px 0;
+}
+.right_recommend p {
+  color: #828282;
+  font-weight: bold;
+  font-size: 14px;
+}
+#right_recommend {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+
+.btn_all {
+  background-color: transparent;
+  border: none;
+  color: #262626;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.rignt_recommend_profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0 15px 0;
+}
+.recommend_profile {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.follower_name {
+  font-size: 14px;
+  color: black;
+  font-weight: bold;
+  margin: 4px 10px;
+}
+
+.follower_ment {
+  font-size: 12px;
+  color: grey;
+  margin: 0 10px;
+}
+
+/* 가운데 위 박스 */
+.middle_box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 470px;
+  height: 120px;
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  background-color: white;
+  padding: 16px;
+  margin: 20px 0;
+}
+
+.middle_name {
+  font-size: 14px;
+  padding: 0 0 0 10px;
+}
+
+/* 가운데 내용 */
+
+.middle_main {
+  width: 470px;
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.middle_head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.middle_profile {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+.icon-more {
+  width: 20px;
+  height: 20px;
+  margin: 0 20px 0 0;
+}
+.middle_userName {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 0 4px 10px;
+}
+
+.middle_location {
+  font-size: 12px;
+  margin: 0 0 0 10px;
+}
+
+.middle_main_img {
+  width: 470px;
+}
+.middle_icons {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0;
+}
+.middle_icon {
+  width: 25px;
+  margin: 0 10px 0;
+}
+.text-like {
+  font-size: 13px;
+  font-weight: bold;
+}
+.middle_box_2 {
+  margin: 0 auto;
+}
+
+/* 푸터 */
+footer {
+  width: 320px;
+  line-height: 18px;
+  font-size: 12px;
+  color: #c7c7c7;
+}
+
+.footer-info {
+  margin: 0 0 20px 0;
+}
+
+/* 더보기 */
+.wrap-menu {
+  display: none;
+}
+/* "show-menu" 클래스를 추가하여 메뉴를 보이게 합니다. */
+.wrap-menu.show-menu {
+  display: block;
+}

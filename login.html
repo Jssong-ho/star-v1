@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel = "stylesheet" href="login.css">
+    <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./img/in_logo.png">
+    <style>
+    
+      </style>
+</head>
+
+<body>
+    
+    <div id = "container_wrap">      
+        <div id="pic">
+            <img src="./img/phone.gif">
+        </div> 
+        <div>
+            <div class="container">            
+                <li>
+                    <img class = "logo" src="./img/logo.png" alt="logo">   
+                </li>
+                <form name="login" action="" method="post"> 
+                    <input class = "id" type="text" placeholder="전화번호,사용자 이름 또는 이메일"> 
+                    <div class="password-container">
+                        <input class="pwd show-password-button" type="password" placeholder="비밀번호">
+                        <i class="fas fa-eye" id="showPasswordButton"></i>
+                      </div>                      
+                    <button class = "loginBtn"><a href="./main.html">로그인</a></button>
+                </form>
+                <div class="or_line">
+                    <div class="line"></div>
+                    <div class="text">또는</div>
+                    <div class="line"></div>
+                </div>
+                <div class="flogin">                
+                    <a href="https://www.facebook.com/login.php
+                        ?skip_api_login=1&api_key=124024574287414&
+                        kid_directed_site=0&app_id=124024574287414&
+                        signed_next=1&next=https%3A%2F%2Fwww.facebook.com
+                        %2Fdialog%2Foauth%3Fclient_id%3D124024574287414%
+                        26locale%3Dko_KR%26redirect_uri%3Dhttps%253A%
+                        252F%252Fwww.instagram.com%252Faccounts%252Fsignup
+                        %252F%26response_type%3Dcode%252Cgranted_scopes%26scope%
+                        3Demail%26state%3D%257B%2522fbLoginKey%2522%
+                        253A%25221nzqhir1bimcnm17upsg1eyj9qdu3z9261r2yy9d1uqvx9i1aj0zq8%
+                        2522%252C%2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%
+                        252Fdisclosure%252F%253Fnext%253D%25252F%2522%257D%26ret%
+                        3Dlogin%26fbapp_pres%3D0%26logger_id%
+                        3D2b4a73a0-363c-47ba-aaaa-82737b38972b%26tp%
+                        3Dunspecified&cancel_url=https%3A%2F%2Fwww.instagram.com
+                        %2Faccounts%2Fsignup%2F%3Ferror%3Daccess_denied%
+                        26error_code%3D200%26error_description%3DPermissions%
+                        2Berror%26error_reason%3Duser_denied%26state%3D%257B%
+                        2522fbLoginKey%2522%253A%25221nzqhir1bimcnm17
+                        upsg1eyj9qdu3z9261r2yy9d1uqvx9i1aj0zq8%2522%252C%
+                        2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%
+                        252Fdisclosure%252F%253Fnext%253D%25252F%2522%
+                        257D%23_%3D_&display=page&locale=ko_KR&pl_dbl=0 ">
+                        <img src ="./img/flogo.png">
+                        Facebook으로 로그인</a> 
+                </div>
+                <ul class="findpw">
+                    <li><a href="findpwd.html">비밀번호를 잊으셨나요?</a></li>
+                </ul>
+            </div>
+            <div class = "account">
+                <ul>
+                    <li>계정이 없으신가요?</li>
+                    <li><a href="join.html">가입하기</a></li>
+                </ul>
+            </div>
+            <div class = "link">
+                <li> 앱을 다운로드하세요</li>
+                    <a href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=ig_mid%3D7F853EB4-BC7D-49DF-9086-A1821BE33E4B%26utm_campaign%3DloginPage%26utm_content%3Dlo%26utm_source%3Dinstagramweb%26utm_medium%3Dbadge%26original_referrer%3Dhttps://www.google.com/&pli=1">
+                        <img src="./img/gplay.png">
+                    </a>
+                    <a href="https://www.microsoft.com/store/productId/9NBLGGH5L9XT?ocid=pdpshare">
+                        <img src="./img/micro.png">
+                    </a>
+            </div>
+        </div>
+
+        <footer>
+            <div>
+                <a href="#" target="_blank"> Meta </a> &nbsp;                
+                <a href="#" target="_blank">소개</a> &nbsp;
+                <a href="#" target="_blank">블로그</a> &nbsp;
+                <a href="#" target="_blank"> 채용 정보</a> &nbsp;
+                <a href="#" target="_blank"> 도움말 </a> &nbsp;
+                <a href="#" target="_blank"> API </a> &nbsp;
+                <a href="#" target="_blank"> 개인정보처리방침 </a> &nbsp;
+                <a href="#" target="_blank"> 약관 </a> &nbsp;
+                <a href="#" target="_blank"> 위치 </a> &nbsp;
+                <a href="#" target="_blank"> Instagram Lite </a> &nbsp;
+                <a href="#" target="_blank"> Threads </a> &nbsp;
+                <a href="#" target="_blank"> 연락처 업로드 & 비사용자 </a> &nbsp;
+                <a href="#" target="_blank"> Meta Verified </a> <br><br>
+                <a > © 2023 Instagram from Meta </a> 
+            </div></footer> &nbsp;
+        
+    </div>   
+</body>
+<script>
+    const passwordInput = document.querySelector(".pwd");
+    const showPasswordButton = document.getElementById("showPasswordButton");
+    let isPasswordVisible = false;
+
+    showPasswordButton.addEventListener("click", function() {
+      if (!isPasswordVisible) {
+        passwordInput.type = "text";
+        isPasswordVisible = true;
+      } else {
+        passwordInput.type = "password";
+        isPasswordVisible = false;
+      }     
+    });
+    passwordInput.addEventListener("input", function() {
+  showPasswordButton.style.display = passwordInput.value ? "block" : "none";
+});
+  </script>
+</html>

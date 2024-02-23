@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        list-style: none;
+      }
+      .wrap-menu {
+        display: none;
+        width: 150px;
+      }
+      #home img {
+        height: 30px;
+      }
+
+      .wrap-menu.show-menu {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="home">
+      <img src="./img/icon/more.png" />
+      <p>더보기</p>
+      <div class="wrap-menu">
+        <ul>
+          <li>
+            <div class="menu-profile">
+              <img src="./img/icon/setting.png" alt="설정" />
+              <p>프로필</p>
+            </div>
+          </li>
+          <li>
+            <div class="menu-bookmark">
+              <img src="./img/icon/act.png" alt="내활동" />
+              <p>저장됨</p>
+            </div>
+          </li>
+          <li>
+            <div class="menu-setting">
+              <img src="./img/icon/saved.png" alt="저장됨" />
+              <p>설정</p>
+            </div>
+          </li>
+          <li>
+            <div class="menu-change">
+              <img src="./img/icon/mod.png" alt="모드 전환" />
+              <p>계정 전환</p>
+            </div>
+          </li>
+          <li>
+            <div class="menu-change">
+              <img src="./img/icon/trouble.png" alt="문제 신고" />
+              <p>계정 전환</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="menu-change">
+              <img src="./img/icon/change.png" alt="계정 전환" />
+              <p>계정 전환</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="menu-logout">
+              <p>로그아웃</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      const homeButton = document.getElementById("home");
+      const menu = document.querySelector(".wrap-menu");
+
+      homeButton.addEventListener("click", function (e) {
+        e.stopPropagation(); // 클릭 이벤트 전파 방지
+        menu.classList.toggle("show-menu");
+      });
+
+      // document를 클릭했을 때 메뉴 닫기
+      document.addEventListener("click", function (event) {
+        if (
+          menu.classList.contains("show-menu") &&
+          event.target !== homeButton
+        ) {
+          menu.classList.remove("show-menu");
+        }
+      });
+      // 각 메뉴 항목에 hover 이벤트 추가
+      const menuItems = document.querySelectorAll(".wrap-menu li");
+      menuItems.forEach((item) => {
+        item.addEventListener("mouseover", function () {
+          item.style.backgroundColor = "lightgray";
+        });
+
+        item.addEventListener("mouseout", function () {
+          item.style.backgroundColor = "transparent";
+        });
+      });
+    </script>
+  </body>
+</html>
